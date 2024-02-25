@@ -12,6 +12,16 @@ mvn spring-boot:run
 
 o puede ser corrido con intellij idea, sts u otro IDE para java con spring
 
+## Colección de postman
+
+Dentro del proyecto, encontrarás una colección de postman "prueba_tecnica_linktic.postman_collection.json", para interactuar con los end point del proyecto
+
+## Base de datos
+
+![modelo-db.png](modelo-db.png)
+
+Dentro del proyecto, también encontrarás un archivo "código SQL.sql", que es necesario, para crear la base de datos y setear valores iniciales
+
 Una vez iniciado, la aplicación estará disponible en http://localhost:8080.
 
 Documentación API con Swagger UI
