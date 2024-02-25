@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "f14861d9-9a8f-46a4-8b29-def3c4c0d61c",
+		"name": "prueba_tecnica_linktic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22440885"
+	},
+	"item": [
+		{
+			"name": "get amparos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/amparo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"amparo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get primas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/prima",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"prima"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get asegurados",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/asegurado",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"asegurado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Calcular Liquidacion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipoIdentificacion\":\"CC\",\r\n    \"nroIdentificacion\":\"99826607\",\r\n    \"valorAsegurado\":9982660\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/asegurado/calcularLiquidacion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"asegurado",
+						"calcularLiquidacion"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
